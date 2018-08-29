@@ -12,6 +12,14 @@
 		6F5256C4213649A70010D97E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5256C2213649A70010D97E /* Main.storyboard */; };
 		6F5256C6213649AF0010D97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5256C5213649AF0010D97E /* Assets.xcassets */; };
 		6F5256C9213649AF0010D97E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5256C7213649AF0010D97E /* LaunchScreen.storyboard */; };
+		6F5256D421364E5C0010D97E /* TableviewMultipleSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5256D221364E5C0010D97E /* TableviewMultipleSections.swift */; };
+		6F5256D521364E5C0010D97E /* TableviewMultipleSections.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5256D321364E5C0010D97E /* TableviewMultipleSections.xib */; };
+		6F5256D9213656860010D97E /* TableviewDeletingRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5256D7213656860010D97E /* TableviewDeletingRows.swift */; };
+		6F5256DA213656860010D97E /* TableviewDeletingRows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5256D8213656860010D97E /* TableviewDeletingRows.xib */; };
+		6F5256DE213658540010D97E /* TableviewMovingRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5256DC213658540010D97E /* TableviewMovingRows.swift */; };
+		6F5256DF213658540010D97E /* TableviewMovingRows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5256DD213658540010D97E /* TableviewMovingRows.xib */; };
+		6F5256E321366D6C0010D97E /* TableviewSwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5256E121366D6C0010D97E /* TableviewSwipeActions.swift */; };
+		6F5256E421366D6C0010D97E /* TableviewSwipeActions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5256E221366D6C0010D97E /* TableviewSwipeActions.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		6F5256C5213649AF0010D97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F5256C8213649AF0010D97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F5256CA213649AF0010D97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F5256D221364E5C0010D97E /* TableviewMultipleSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewMultipleSections.swift; sourceTree = "<group>"; };
+		6F5256D321364E5C0010D97E /* TableviewMultipleSections.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableviewMultipleSections.xib; sourceTree = "<group>"; };
+		6F5256D7213656860010D97E /* TableviewDeletingRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewDeletingRows.swift; sourceTree = "<group>"; };
+		6F5256D8213656860010D97E /* TableviewDeletingRows.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableviewDeletingRows.xib; sourceTree = "<group>"; };
+		6F5256DC213658540010D97E /* TableviewMovingRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewMovingRows.swift; sourceTree = "<group>"; };
+		6F5256DD213658540010D97E /* TableviewMovingRows.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableviewMovingRows.xib; sourceTree = "<group>"; };
+		6F5256E121366D6C0010D97E /* TableviewSwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewSwipeActions.swift; sourceTree = "<group>"; };
+		6F5256E221366D6C0010D97E /* TableviewSwipeActions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableviewSwipeActions.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,10 @@
 		6F5256BD213649A70010D97E /* Lession5 */ = {
 			isa = PBXGroup;
 			children = (
+				6F5256E021366CE90010D97E /* Table Swipe Actions */,
+				6F5256DB2136583D0010D97E /* Tableview Moving Rows */,
+				6F5256D6213656690010D97E /* Tableview Deleting Rows */,
+				6F5256D121364E450010D97E /* Tableview Multiple Sections */,
 				6F5256BE213649A70010D97E /* AppDelegate.swift */,
 				6F5256C0213649A70010D97E /* ViewController.swift */,
 				6F5256C2213649A70010D97E /* Main.storyboard */,
@@ -62,6 +82,42 @@
 				6F5256CA213649AF0010D97E /* Info.plist */,
 			);
 			path = Lession5;
+			sourceTree = "<group>";
+		};
+		6F5256D121364E450010D97E /* Tableview Multiple Sections */ = {
+			isa = PBXGroup;
+			children = (
+				6F5256D221364E5C0010D97E /* TableviewMultipleSections.swift */,
+				6F5256D321364E5C0010D97E /* TableviewMultipleSections.xib */,
+			);
+			path = "Tableview Multiple Sections";
+			sourceTree = "<group>";
+		};
+		6F5256D6213656690010D97E /* Tableview Deleting Rows */ = {
+			isa = PBXGroup;
+			children = (
+				6F5256D7213656860010D97E /* TableviewDeletingRows.swift */,
+				6F5256D8213656860010D97E /* TableviewDeletingRows.xib */,
+			);
+			path = "Tableview Deleting Rows";
+			sourceTree = "<group>";
+		};
+		6F5256DB2136583D0010D97E /* Tableview Moving Rows */ = {
+			isa = PBXGroup;
+			children = (
+				6F5256DC213658540010D97E /* TableviewMovingRows.swift */,
+				6F5256DD213658540010D97E /* TableviewMovingRows.xib */,
+			);
+			path = "Tableview Moving Rows";
+			sourceTree = "<group>";
+		};
+		6F5256E021366CE90010D97E /* Table Swipe Actions */ = {
+			isa = PBXGroup;
+			children = (
+				6F5256E121366D6C0010D97E /* TableviewSwipeActions.swift */,
+				6F5256E221366D6C0010D97E /* TableviewSwipeActions.xib */,
+			);
+			path = "Table Swipe Actions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +178,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5256DF213658540010D97E /* TableviewMovingRows.xib in Resources */,
 				6F5256C9213649AF0010D97E /* LaunchScreen.storyboard in Resources */,
+				6F5256E421366D6C0010D97E /* TableviewSwipeActions.xib in Resources */,
+				6F5256D521364E5C0010D97E /* TableviewMultipleSections.xib in Resources */,
 				6F5256C6213649AF0010D97E /* Assets.xcassets in Resources */,
+				6F5256DA213656860010D97E /* TableviewDeletingRows.xib in Resources */,
 				6F5256C4213649A70010D97E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5256D9213656860010D97E /* TableviewDeletingRows.swift in Sources */,
+				6F5256D421364E5C0010D97E /* TableviewMultipleSections.swift in Sources */,
+				6F5256DE213658540010D97E /* TableviewMovingRows.swift in Sources */,
 				6F5256C1213649A70010D97E /* ViewController.swift in Sources */,
+				6F5256E321366D6C0010D97E /* TableviewSwipeActions.swift in Sources */,
 				6F5256BF213649A70010D97E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
 				INFOPLIST_FILE = Lession5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHYTCSHP5R;
 				INFOPLIST_FILE = Lession5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

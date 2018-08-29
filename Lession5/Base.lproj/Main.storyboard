@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Muw-cL-qwx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,82 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lession5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k32-d8-lji">
+                                <rect key="frame" x="37.5" y="215.5" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-Xy-m1l">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="75"/>
+                                        <state key="normal" title="Tableview Multiple Sections"/>
+                                        <connections>
+                                            <action selector="navigationMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0OX-Bm-tGT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uae-WJ-SKc">
+                                        <rect key="frame" x="0.0" y="75" width="300" height="75"/>
+                                        <state key="normal">
+                                            <string key="title">Tableview Deleting Rows
+</string>
+                                        </state>
+                                        <connections>
+                                            <action selector="navigationMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxC-CZ-6Ly"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uk5-ro-knO">
+                                        <rect key="frame" x="0.0" y="150" width="300" height="75"/>
+                                        <state key="normal" title="Tableview Moving Rows"/>
+                                        <connections>
+                                            <action selector="navigationMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sM9-gf-H7h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLP-Ha-sC2">
+                                        <rect key="frame" x="0.0" y="225" width="300" height="75"/>
+                                        <state key="normal" title="Table Swipe Actions"/>
+                                        <connections>
+                                            <action selector="navigationMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrY-oV-hKV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2io-ba-EbF"/>
+                                    <constraint firstAttribute="height" constant="300" id="YDz-UZ-VGi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k32-d8-lji" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HvL-jB-2lW"/>
+                            <constraint firstItem="k32-d8-lji" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yiL-6E-zp6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Wia-W0-ilv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="826" y="698"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vbC-49-tR2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Muw-cL-qwx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LzV-xr-0k1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f2A-c4-6fW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXc-ED-1o9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="697.60119940029995"/>
         </scene>
     </scenes>
 </document>
